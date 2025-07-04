@@ -1,5 +1,3 @@
-"use client";
-
 import styled from "@emotion/styled";
 import TitleL from "../typography/titleL";
 import { TEXTS } from "@/constants/texts";
@@ -9,7 +7,7 @@ const ContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.875rem;
-  padding: 5rem;
+  padding: 5rem 0;
 `;
 
 const ImagesContainerStyled = styled.div`

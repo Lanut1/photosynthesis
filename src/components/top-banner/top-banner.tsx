@@ -1,5 +1,3 @@
-"use client";
-
 import { TEXTS } from "@/constants/texts";
 import styled from "@emotion/styled";
 

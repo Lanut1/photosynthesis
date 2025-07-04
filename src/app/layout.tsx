@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {fontHardman, fontSuisse, fontABCDiatype } from '@/lib/fonts';
+import {fontHardman, fontSuisse, fontABCDiatype, fontIbmPlexMono } from '@/lib/fonts';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${fontHardman.variable} ${fontSuisse.variable} ${fontABCDiatype.variable}`}>
+      <body className={`${fontHardman.variable} ${fontSuisse.variable} ${fontABCDiatype.variable} ${fontIbmPlexMono.variable}`}>
         {children}
       </body>
     </html>

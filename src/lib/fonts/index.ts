@@ -1,4 +1,5 @@
 import localFont from 'next/font/local';
+import { IBM_Plex_Mono } from "next/font/google";
 
 export const fontHardman = localFont({
   src: '/Hardman/hardman.woff2',
@@ -16,7 +17,7 @@ export const fontHardman = localFont({
 });
 
 export const fontSuisse = localFont({
-  src: '/SuisseIntl/SuisseIntl-SemiBold.woff2',
+  src: '/SuisseIntl/suisseintl-medium.woff2',
   display: 'swap',
   variable: '--font-suisse',
   fallback: [
@@ -43,4 +44,12 @@ export const fontABCDiatype = localFont({
     'Arial',
     'sans-serif',
   ]
+});
+
+
+export const fontIbmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-ibmplexmono",
+  display: "swap",
 });
