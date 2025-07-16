@@ -17,19 +17,21 @@ const ContainerStyled = styled.div`
   width: calc(50% - 0.25rem);
 `;
 
-const ImageWrapper = styled.div`
+const ImageWrapperStyled = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
   aspect-ratio: 2 / 3 ;
+  border-radius: 1rem;
+  overflow: hidden;
 `;
 
 const ImageBlock = ({ image, text, className }: ImageBlockProps) => {
   return (
     <ContainerStyled className={className}>
-      <ImageWrapper>
+      <ImageWrapperStyled>
         <Image fill src={image} alt={text} />
-      </ImageWrapper> 
+      </ImageWrapperStyled> 
       <ParagraphM>{text}</ParagraphM>
     </ContainerStyled>
   );

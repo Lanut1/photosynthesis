@@ -2,13 +2,14 @@ import AuthorStatement from "./sub/author-statement";
 import MainReaction from "./sub/main-reaction";
 import styled from "@emotion/styled";
 
+//TODO: check paddings on the page and this container
 const SectionStyled = styled.div`
   position: relative;
   min-height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 15rem;
-  padding: 5rem 10rem;
+  padding: 5rem 6rem;
   overflow: hidden;
 
   &::before {

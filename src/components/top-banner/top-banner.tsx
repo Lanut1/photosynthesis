@@ -1,6 +1,7 @@
 import { TEXTS } from "@/constants/texts";
 import styled from "@emotion/styled";
 
+// tODO: fix banner position
 const BannerStyled = styled.div`
   font-family: var(--font-abcdiatype);
   font-size: 1rem;

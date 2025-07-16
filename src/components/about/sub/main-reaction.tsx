@@ -3,23 +3,13 @@ import styled from "@emotion/styled";
 import ReactionLeft from "./graphics/reaction-left";
 import Union from "./graphics/union";
 import ReactionRight from "./graphics/reaction-right";
+import RoundTag from "@/components/tag/round-tag";
 
 const ReactionContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-`;
-
-const TitleStyled = styled.div`
-  font-family: var(--font-ibmplexmono);
-  color: var(--forest-green);
-  font-size: 0.875rem;
-  line-height: 115%;
-  letter-spacing: -0.42px;
-  border-radius: 3.125rem;
-  padding: 0.5rem 1.25rem;
-  border: 2px solid var(--forest-green);
 `;
 
 const FormulaStyled = styled.div`
@@ -32,7 +22,7 @@ const FormulaStyled = styled.div`
 const MainReaction = () => {
   return (
     <ReactionContainerStyled>
-      <TitleStyled>{TEXTS.MAIN_REACTION}</TitleStyled>
+      <RoundTag>{TEXTS.MAIN_REACTION}</RoundTag>
       <FormulaStyled>
         <ReactionLeft />
         <Union />
