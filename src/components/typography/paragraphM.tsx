@@ -8,6 +8,7 @@ const ParagraphStyled = styled.p`
   letter-spacing: -0.72px;
   line-height: 115%;
   text-align: left;
+  white-space: pre-wrap;
 `;
 
 const ParagraphM = ({ children, className }: DefaultTypographyProps) => {

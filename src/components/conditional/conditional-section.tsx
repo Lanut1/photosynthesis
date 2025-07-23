@@ -7,8 +7,8 @@ import TitleL from "../typography/titleL";
 const ConditionalSectionStyled = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 10rem 6rem 6rem;
-  gap: 3rem;
+  padding: 8.375rem 6rem 7.438rem;
+  gap: 2.5rem;
   align-items: center;
 `;
 
@@ -17,12 +17,20 @@ const TitleMStyled = styled(TitleM)`
   align-self: flex-start;
 `;
 
-
 const CardsContainer = styled.div`
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 8rem;
+  margin-bottom: 5.875rem;
+`;
+
+const TitleContainerStyled = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+  justify-items: flex-start;
 `;
 
 const TitleLStyled = styled(TitleL)`
@@ -40,18 +48,17 @@ const ConditionalSection = () => {
       <CardsContainer>
       {TEXTS.CONDITION.CARDS.map(card => (
         <ConditionCard
+          key={card.NAME}
           icon={card.ICON}
           title={card.NAME}
           description={card.DESCRIPTION}
         />
       ))}
       </CardsContainer>
-
-
-
-      <TitleLStyled>{TEXTS.CONDITION.SEE}</TitleLStyled>
-      <TitleM>{TEXTS.CONDITION.EVERYWHERE}</TitleM>
-
+      <TitleContainerStyled>
+        <TitleLStyled>{TEXTS.CONDITION.SEE}</TitleLStyled>
+        <TitleM>{TEXTS.CONDITION.EVERYWHERE}</TitleM>
+      </TitleContainerStyled>
     </ConditionalSectionStyled>
   );
 };

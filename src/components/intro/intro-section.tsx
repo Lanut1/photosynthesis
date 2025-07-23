@@ -7,7 +7,7 @@ const ContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.875rem;
-  padding: 5rem 0;
+  padding: 4.688rem 6rem;
 `;
 
 const ImagesContainerStyled = styled.div`

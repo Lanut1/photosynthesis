@@ -7,6 +7,7 @@ const TitleStyled = styled.h3`
   letter-spacing: -1.08px;
   line-height: 115%;
   text-align: center;
+  white-space: pre-wrap;
 `;
 
 const TitleS = ({ children, className }: DefaultTypographyProps) => {

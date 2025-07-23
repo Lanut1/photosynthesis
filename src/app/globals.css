@@ -6,12 +6,12 @@
   --forest-green: #08A454;
   --black: #2C2C2C;
   --white: #FFFFFF;
+  --gray: #DADADA;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {

@@ -9,7 +9,7 @@ const LabSectionStyled = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  padding: 5rem 6rem;
+  padding: 2rem 6rem 5rem;
 `;
 
 const TextContainerStyled = styled.div`
@@ -35,7 +35,6 @@ const ImageContainerStyled = styled.div`
   width: 100%;
 `;
 
-// TODO: check images later
 const LabProcessStyled = styled.div`
   width: 40%;
   min-height: 200px;

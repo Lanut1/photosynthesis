@@ -2,7 +2,6 @@ import ParagraphXS from "@/components/typography/paragraphXS";
 import TitleXS from "@/components/typography/titleXS";
 import styled from "@emotion/styled";
 import Image from "next/image";
-import { ReactNode } from "react";
 
 interface ConditionCardProps {
   icon: string;
@@ -12,25 +11,25 @@ interface ConditionCardProps {
 
 const CardStyled = styled.div`
   display: flex;
+  flex: 1 1 320px;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1.5rem;
-  min-width: 220px;
-  border-right: 1px solid #DADADA;
+  padding: 3.25rem 1.5rem;
+  border-right: 1px solid var(--gray);
 
   &:first-of-type {
-    border-left: 1px solid #DADADA;
+    border-left: 1px solid var(--gray);
   }
 `;
 
 const IconWrapper = styled.div`
-  background-color: #E3F3D1;
+  background-color: var(--soft-green);
   align-self: center;
-  border-radius: 28px;
+  border-radius: 1.75rem;
   padding: 1.2rem;
   margin-bottom: 3rem;
-  width: 98px;
-  height: 98px;
+  width: 6.125rem;
+  height: 6.125rem;
 
   img {
     width: 100%;
@@ -39,12 +38,12 @@ const IconWrapper = styled.div`
 `;
 
 const TitleStyled = styled(TitleXS)`
-
   margin-bottom: 0.5rem;
 `;
 
 const DescriptionStyled = styled(ParagraphXS)`
   text-align: left;
+  white-space: pre-wrap;
 `;
 
 const ConditionCard = ({ icon, title, description }: ConditionCardProps) => (

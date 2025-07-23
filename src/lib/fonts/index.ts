@@ -17,7 +17,7 @@ export const fontHardman = localFont({
 });
 
 export const fontSuisse = localFont({
-  src: '/SuisseIntl/suisseintl-medium.woff2',
+  src: '/SuisseIntl/suisseintl-regular-webfont.woff2',
   display: 'swap',
   variable: '--font-suisse',
   fallback: [

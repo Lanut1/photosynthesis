@@ -3,12 +3,13 @@ import TitleM from "../typography/titleM";
 import { TEXTS } from "@/constants/texts";
 import Image from "next/image";
 import Overlay from "./sub/overlay";
+import gridItems from "./sub/grid-items.config";
 
 const HowWorksContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 5rem 6rem;
+  gap: 4.563rem;
+  padding: 5rem 6rem 8.375rem;
 `;
 
 const GridContainerStyled = styled.div`
@@ -26,7 +27,6 @@ const GridContainerStyled = styled.div`
     align-self: center;
     border-radius: 5rem;
   }
-
 `;
 
 const ContainerStyled = styled.div`
@@ -42,24 +42,18 @@ const ContainerStyled = styled.div`
     object-fit: contain;
   }
 `;
-//TODO fix copypaste
+
 const HowWorksSection = () => {
   return (
     <HowWorksContainerStyled>
       <TitleM>{TEXTS.HOW_WORKS.TITLE}</TitleM>
       <GridContainerStyled>
-        <ContainerStyled><Image src="/images/plant.svg" alt="" width={0} height={0}/></ContainerStyled>
-        <ContainerStyled>
-          <Image src="/images/light-leave.svg" alt="" width={0} height={0}/>
-          <Overlay tagTitle={TEXTS.HOW_WORKS.LIGHT_REACTION} description={TEXTS.HOW_WORKS.LIGHT_DETAILS}/>
-        </ContainerStyled>
-        <ContainerStyled><Image src="/images/leaves.svg" alt="" width={0} height={0}/></ContainerStyled>
-        <ContainerStyled><Image src="/images/night-leaves.svg" alt="" width={0} height={0}/></ContainerStyled>
-        <ContainerStyled>
-          <Image src="/images/night-process.svg" alt="" width={0} height={0}/>
-          <Overlay tagTitle={TEXTS.HOW_WORKS.NIGHT_REACTION} description={TEXTS.HOW_WORKS.NIGHT_DETAILS}/>
-        </ContainerStyled>
-        <ContainerStyled><Image src="/images/night-reaction.svg" alt="" width={0} height={0}/></ContainerStyled>
+        {gridItems.map(item => (
+          <ContainerStyled key={item.id}>
+            <Image src={item.src} alt={item.alt} width={0} height={0}/>
+            {item.overlay?.description && <Overlay tagTitle={item.overlay.tagTitle} description={item.overlay.description}/>}
+          </ContainerStyled>
+        ))}
       </GridContainerStyled>
 
     </HowWorksContainerStyled>

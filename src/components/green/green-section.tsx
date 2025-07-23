@@ -16,8 +16,9 @@ const TitleStyled = styled(TitleM)`
   color: var(--white);
   width: 35%;
   text-align: left;
+  white-space: pre-wrap;
 `;
-//TODO: add animation or picture
+
 const AnimationStyled = styled.div`
   height: 17.5rem;
 `;
@@ -27,6 +28,7 @@ const ParagraphStyled = styled(ParagraphM)`
   align-self: flex-end;
   margin-right: 10%;
   width: 35%;
+  white-space: pre-wrap;
 `;
 
 const GreenSection = () => {

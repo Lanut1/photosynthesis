@@ -31,6 +31,7 @@ const RoundTagStyled = styled(RoundTag)`
 
 const ParagraphStyled = styled(ParagraphS)`
   color: var(--white);
+  white-space: pre-wrap;
 `;
 
 const Overlay = ({ tagTitle, description }: OverlayProps) => {
