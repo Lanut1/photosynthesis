@@ -20,6 +20,19 @@ const CardStyled = styled.div`
   &:first-of-type {
     border-left: 1px solid var(--gray);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--gray);
+    padding: 1.25rem 1.5rem;
+    flex: 1 1 290px;
+
+    &:first-of-type {
+      border-left: none;
+      border-top: 1px solid var(--gray);
+    }
+  }
 `;
 
 const IconWrapper = styled.div`
@@ -27,7 +40,7 @@ const IconWrapper = styled.div`
   align-self: center;
   border-radius: 1.75rem;
   padding: 1.2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.75rem;
   width: 6.125rem;
   height: 6.125rem;
 

@@ -8,6 +8,11 @@ const TitleStyled = styled.h3`
   line-height: 115%;
   text-align: center;
   white-space: pre-wrap;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    letter-spacing: -0.6px;
+  }
 `;
 
 const TitleS = ({ children, className }: DefaultTypographyProps) => {

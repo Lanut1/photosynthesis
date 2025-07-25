@@ -8,6 +8,11 @@ const ParagraphStyled = styled.p`
   letter-spacing: -0.66px;
   line-height: 110%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    letter-spacing: -0.42px;
+  }
 `;
 
 const ParagraphS = ({ children, className }: DefaultTypographyProps) => {

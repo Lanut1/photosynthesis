@@ -1,3 +1,4 @@
+import { useIsMobile } from "../utils/useIsMobile";
 import AuthorStatement from "./sub/author-statement";
 import MainReaction from "./sub/main-reaction";
 import styled from "@emotion/styled";
@@ -42,6 +43,18 @@ const SectionStyled = styled.div`
     transform: scale(1.8) translateY(35%);
     transform-origin: right bottom;
   }
+
+  @media (max-width: 768px) {
+    padding: 5rem 0.75rem 26.5rem;
+
+    &::before {
+      transform: scale(0.9) translateX(-27%) translateY(12%);
+    }
+
+    &::after {
+      transform: scale(1.4) translateY(15%) translateX(25%);
+    }
+  }
 `;
 
 const OverlayStyled = styled.span`
@@ -64,11 +77,17 @@ const OverlayStyled = styled.span`
 `;
 
 const AboutSection = () => {
+  const isMobile = useIsMobile();
+
   return (
     <SectionStyled>
       <AuthorStatement/>
-      <MainReaction/>
-      <OverlayStyled/>
+      {!isMobile && (
+        <>
+          <MainReaction/>
+          <OverlayStyled/>
+        </>
+      )}
     </SectionStyled>
   );
 };

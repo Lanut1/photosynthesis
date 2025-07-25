@@ -7,6 +7,11 @@ const TitleStyled = styled.h2`
   letter-spacing: -1.56px;
   line-height: 115%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    letter-spacing: -1.2px;
+  }
 `;
 
 const TitleM = ({ children, className }: DefaultTypographyProps) => {

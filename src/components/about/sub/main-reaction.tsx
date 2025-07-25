@@ -17,6 +17,10 @@ const FormulaStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 const MainReaction = () => {

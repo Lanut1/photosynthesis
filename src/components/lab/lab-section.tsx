@@ -10,6 +10,11 @@ const LabSectionStyled = styled.div`
   align-items: center;
   gap: 3rem;
   padding: 2rem 6rem 5rem;
+
+  @media (max-width: 768px) {
+    padding: 6.5rem 0.75rem 2rem;
+    gap: 2.5rem;
+  }
 `;
 
 const TextContainerStyled = styled.div`
@@ -17,6 +22,11 @@ const TextContainerStyled = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
 `;
 
 const TitleStyled = styled(TitleM)`
@@ -25,6 +35,10 @@ const TitleStyled = styled(TitleM)`
 
 const ParagraphStyled = styled(ParagraphM)`
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ImageContainerStyled = styled.div`
@@ -33,6 +47,10 @@ const ImageContainerStyled = styled.div`
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LabProcessStyled = styled.div`
@@ -43,6 +61,10 @@ const LabProcessStyled = styled.div`
     object-fit: contain;
     width: 100%;
     height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -55,8 +77,11 @@ const LabCanvasStyled = styled.div`
     width: 100%;
     height: 100%;
   }
-`;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
 
 const LabSection = () => {
   return (

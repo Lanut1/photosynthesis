@@ -22,6 +22,11 @@ const OverlayStyled = styled.div`
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 4.188rem 1rem;
+    border-radius: 5rem;
+  }
 `;
 
 const RoundTagStyled = styled(RoundTag)`

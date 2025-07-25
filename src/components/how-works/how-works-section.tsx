@@ -10,6 +10,17 @@ const HowWorksContainerStyled = styled.div`
   flex-direction: column;
   gap: 4.563rem;
   padding: 5rem 6rem 8.375rem;
+
+  @media (max-width: 768px) {
+    padding: 5.5rem 0.75rem;
+    gap: 2.5rem;
+  }
+`;
+
+const TitleStyled = styled(TitleM)`
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 `;
 
 const GridContainerStyled = styled.div`
@@ -26,6 +37,19 @@ const GridContainerStyled = styled.div`
   & > :nth-of-type(6) {
     align-self: center;
     border-radius: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.25rem;
+
+    & > :nth-of-type(4) {
+      margin-top: 2.5rem;
+    }
+    & > :nth-of-type(6) {
+      margin-bottom: 2rem;
+    }
   }
 `;
 
@@ -46,7 +70,7 @@ const ContainerStyled = styled.div`
 const HowWorksSection = () => {
   return (
     <HowWorksContainerStyled>
-      <TitleM>{TEXTS.HOW_WORKS.TITLE}</TitleM>
+      <TitleStyled>{TEXTS.HOW_WORKS.TITLE}</TitleStyled>
       <GridContainerStyled>
         {gridItems.map(item => (
           <ContainerStyled key={item.id}>

@@ -1,12 +1,13 @@
 export const TEXTS = {
   TOP_BANNER: 'This is a pseudo-documentary exploration of photosynthesis, aimed at encouraging people to look at the world around them a little more broadly.',
-  TITLE: 'Photosynthesis',
+  TITLE: 'Photo\u200Bsynthesis',
   INTRO: {
     DEFINITION: 'Photosynthesis is how plants live and grow. They absorb\nsunlight, water from the soil, and carbon dioxide from\nthe air — and turn it all into energy.',
     ENERGY: "This energy — in the form of sugar — feeds the whole plant.\nIn the process, they release oxygen — the one we breathe.",
   },
   MAIN_REACTION: 'the main reaction',
-  ABOUT: 'This project went from an idea and an empty Figma\nfile to something that took shape and came to life.\nThe layouts kept changing — I was searching for what\nit wanted to be. At some point, I realized: the whole\nprocess felt a lot like photosynthesis.',
+  ABOUT_DESKTOP: 'This project went from an idea and an empty Figma\nfile to something that took shape and came to life.\nThe layouts kept changing — I was searching for what\nit wanted to be. At some point, I realized: the whole\nprocess felt a lot like photosynthesis.',
+  ABOUT_MOBILE: 'This project went from an idea\nand an empty Figma file\nto something that took shape\nand came to life. The layouts kept\nchanging — I was searching for\nwhat it wanted to be. At some point,\nI realized: the whole process felt\na lot like photosynthesis.',
   LAB: {
     TITLE: 'A Leaf Is a Lab',
     DESCRIPTION: 'Each leaf contains thousands of microscopic structures — chloroplasts. Inside them: thylakoids where photons collide\nwith electrons. It all starts in this invisible machinery',
@@ -47,7 +48,7 @@ export const TEXTS = {
         ICON: 'images/minerals.svg'
       }
     ],
-    SEE: 'You Don’ t See It',
+    SEE: 'you don’ t see it',
     EVERYWHERE: 'but it’s everywhere'
     
   }

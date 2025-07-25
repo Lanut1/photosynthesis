@@ -15,6 +15,10 @@ const ContainerStyled = styled.div`
   height: 100%;
   gap: 0.5rem;
   width: calc(50% - 0.25rem);
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ImageWrapperStyled = styled.div`

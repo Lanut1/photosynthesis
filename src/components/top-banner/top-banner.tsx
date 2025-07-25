@@ -14,6 +14,12 @@ const BannerStyled = styled.div`
   z-index: 100;
   padding: 0.75rem 4.25rem;
   width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 0.625rem;
+    padding: 0.75rem;
+    letter-spacing: -0.2px;
+  }
 `;
 
 const TopBanner = () => {

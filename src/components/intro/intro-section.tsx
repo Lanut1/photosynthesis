@@ -8,6 +8,11 @@ const ContainerStyled = styled.div`
   flex-direction: column;
   gap: 2.875rem;
   padding: 4.688rem 6rem;
+  
+  @media (max-width: 768px) {
+    padding: 1.25rem 0.75rem 2.5rem;
+    gap: 1.875rem;
+  }
 `;
 
 const ImagesContainerStyled = styled.div`
@@ -15,6 +20,10 @@ const ImagesContainerStyled = styled.div`
   gap: 1.25rem;
   justify-content: center;
   align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const IntroSection = () => {

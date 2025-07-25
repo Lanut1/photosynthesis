@@ -10,6 +10,10 @@ const ConditionalSectionStyled = styled.div`
   padding: 8.375rem 6rem 7.438rem;
   gap: 2.5rem;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 7.5rem 0.75rem 4.813rem;
+  }
 `;
 
 const TitleMStyled = styled(TitleM)`
@@ -23,6 +27,11 @@ const CardsContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 5.875rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
 `;
 
 const TitleContainerStyled = styled.div`
@@ -36,6 +45,10 @@ const TitleContainerStyled = styled.div`
 const TitleLStyled = styled(TitleL)`
   margin-left: -1rem;
   margin-right: -1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ConditionalSection = () => {
