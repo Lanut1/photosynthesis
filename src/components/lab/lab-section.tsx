@@ -12,7 +12,7 @@ const LabSectionStyled = styled.div`
   padding: 2rem 6rem 5rem;
 
   @media (max-width: 768px) {
-    padding: 6.5rem 0.75rem 2rem;
+    padding: 2rem 0.75rem;
     gap: 2.5rem;
   }
 `;

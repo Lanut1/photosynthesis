@@ -45,14 +45,15 @@ const SectionStyled = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 5rem 0.75rem 26.5rem;
+    padding: 5rem 0.75rem 12rem;
+    gap: 15rem;
 
     &::before {
-      transform: scale(0.9) translateX(-27%) translateY(12%);
+      transform: scale(1.2) translateY(-10%) translateX(-3%) rotate(8deg);
     }
 
     &::after {
-      transform: scale(1.4) translateY(15%) translateX(25%);
+      transform: scale(1.5) translateY(25%) translateX(5%);
     }
   }
 `;
@@ -82,12 +83,8 @@ const AboutSection = () => {
   return (
     <SectionStyled>
       <AuthorStatement/>
-      {!isMobile && (
-        <>
-          <MainReaction/>
-          <OverlayStyled/>
-        </>
-      )}
+      <MainReaction/>
+      {!isMobile && <OverlayStyled/>}
     </SectionStyled>
   );
 };

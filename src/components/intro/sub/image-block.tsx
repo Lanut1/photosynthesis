@@ -6,20 +6,8 @@ interface ImageBlockProps {
   image: string;
   text: string;
   className?: string;
+  priority?: boolean;
 }
-
-const ContainerStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  gap: 0.5rem;
-  width: calc(50% - 0.25rem);
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
-`;
 
 const ImageWrapperStyled = styled.div`
   position: relative;
@@ -30,14 +18,14 @@ const ImageWrapperStyled = styled.div`
   overflow: hidden;
 `;
 
-const ImageBlock = ({ image, text, className }: ImageBlockProps) => {
+const ImageBlock = ({ image, text, className, priority = false }: ImageBlockProps) => {
   return (
-    <ContainerStyled className={className}>
-      <ImageWrapperStyled>
-        <Image fill src={image} alt={text} />
+    <>
+      <ImageWrapperStyled className={className}>
+        <Image fill sizes="(max-width: 768px) 100vw, 50vw" src={image} alt={text} priority={priority}/>
       </ImageWrapperStyled> 
       <ParagraphM>{text}</ParagraphM>
-    </ContainerStyled>
+    </>
   );
 };
 

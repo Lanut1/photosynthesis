@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import TitleL from "../typography/titleL";
 import { TEXTS } from "@/constants/texts";
 import ImageBlock from "./sub/image-block";
+import ScrollAnimationWrapper from "@/lib/animations/scroll-wrapper";
 
 const ContainerStyled = styled.div`
   display: flex;
@@ -26,13 +27,30 @@ const ImagesContainerStyled = styled.div`
   }
 `;
 
+const ScrollAnimationWrapperStyled = styled(ScrollAnimationWrapper)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0.5rem;
+  width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
 const IntroSection = () => {
   return (
     <ContainerStyled>
       <TitleL>{TEXTS.TITLE}</TitleL>
       <ImagesContainerStyled>
-        <ImageBlock image="/images/intro-photosynthesis.png" text={TEXTS.INTRO.DEFINITION}/>
-        <ImageBlock image="/images/intro-vintage.png" text={TEXTS.INTRO.ENERGY}/>
+        <ScrollAnimationWrapperStyled>
+            <ImageBlock image="/images/intro-photosynthesis.png" text={TEXTS.INTRO.DEFINITION} priority />
+        </ScrollAnimationWrapperStyled>
+        <ScrollAnimationWrapperStyled delay={0.3}>
+           <ImageBlock image="/images/intro-vintage.png" text={TEXTS.INTRO.ENERGY}/>
+        </ScrollAnimationWrapperStyled>
       </ImagesContainerStyled>
     </ContainerStyled>
   );

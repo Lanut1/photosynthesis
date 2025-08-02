@@ -10,6 +10,10 @@ const ReactionContainerStyled = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
+  @media (max-width: 768px) {
+    gap: 2.5rem;
+  }
 `;
 
 const FormulaStyled = styled.div`
@@ -18,8 +22,20 @@ const FormulaStyled = styled.div`
   align-items: center;
   gap: 1.5rem;
 
+  svg {
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     width: 80%;
+    flex-direction: column;
+    gap: 1.125rem;
+  }
+`;
+
+const UnionStyled = styled(Union)`
+  @media (max-width: 768px) {
+    transform: rotate(90deg);
   }
 `;
 
@@ -29,7 +45,7 @@ const MainReaction = () => {
       <RoundTag>{TEXTS.MAIN_REACTION}</RoundTag>
       <FormulaStyled>
         <ReactionLeft />
-        <Union />
+        <UnionStyled />
         <ReactionRight />
       </FormulaStyled>
     </ReactionContainerStyled>

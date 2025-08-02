@@ -3,6 +3,7 @@ import TitleM from "../typography/titleM";
 import ParagraphM from "../typography/paragraphM";
 import { TEXTS } from "@/constants/texts";
 import { useIsMobile } from "../utils/useIsMobile";
+import PhotosynthesisAnimation from "./sub/animation";
 
 const GreenContainerStyled = styled.div`
   background-color: var(--forest-green);
@@ -29,10 +30,6 @@ const TitleStyled = styled(TitleM)`
   }
 `;
 
-const AnimationStyled = styled.div`
-  height: 17.5rem;
-`;
-
 const ParagraphStyled = styled(ParagraphM)`
   color: var(--white);
   align-self: flex-end;
@@ -47,7 +44,7 @@ const GreenSection = () => {
   return (
     <GreenContainerStyled>
       <TitleStyled>{TEXTS.GREEN.TITLE}</TitleStyled>
-      <AnimationStyled/>
+      <PhotosynthesisAnimation />
       {!isMobile && <ParagraphStyled>{TEXTS.GREEN.DESCRIPTION}</ParagraphStyled>}
     </GreenContainerStyled>
   );

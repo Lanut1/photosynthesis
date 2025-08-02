@@ -8,11 +8,16 @@ const ParagraphStyled = styled.p`
   letter-spacing: -0.72px;
   line-height: 115%;
   text-align: left;
-  white-space: pre-wrap;
+  white-space: normal;
 
   @media (max-width: 768px) {
     font-size: 0.875rem;
     letter-spacing: -0.42px;
+  }
+
+  @media (min-width: 370px) and (max-width: 768px),
+         (min-width: 1280px) {
+    white-space: pre-wrap;
   }
 `;
 

@@ -7,11 +7,15 @@ const TitleStyled = styled.h3`
   letter-spacing: -1.08px;
   line-height: 115%;
   text-align: center;
-  white-space: pre-wrap;
 
   @media (max-width: 768px) {
     font-size: 1.25rem;
     letter-spacing: -0.6px;
+  }
+
+  @media (min-width: 370px) and (max-width: 768px),
+         (min-width: 1280px) {
+    white-space: pre-wrap;
   }
 `;
 

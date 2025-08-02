@@ -23,6 +23,11 @@ const OverlayStyled = styled.div`
   gap: 1.5rem;
   align-items: center;
 
+  @media (max-width: 1024px) {
+    padding: 3rem 1.5rem;
+    border-radius: 6rem;
+  }
+
   @media (max-width: 768px) {
     padding: 4.188rem 1rem;
     border-radius: 5rem;
@@ -36,7 +41,6 @@ const RoundTagStyled = styled(RoundTag)`
 
 const ParagraphStyled = styled(ParagraphS)`
   color: var(--white);
-  white-space: pre-wrap;
 `;
 
 const Overlay = ({ tagTitle, description }: OverlayProps) => {

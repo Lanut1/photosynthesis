@@ -4,6 +4,7 @@ import { TEXTS } from "@/constants/texts";
 import Image from "next/image";
 import Overlay from "./sub/overlay";
 import gridItems from "./sub/grid-items.config";
+import GradientWrapper from "@/lib/animations/gradient-wrapper";
 
 const HowWorksContainerStyled = styled.div`
   display: flex;
@@ -39,7 +40,7 @@ const GridContainerStyled = styled.div`
     border-radius: 5rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 910px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 1.25rem;
@@ -69,18 +70,19 @@ const ContainerStyled = styled.div`
 
 const HowWorksSection = () => {
   return (
-    <HowWorksContainerStyled>
-      <TitleStyled>{TEXTS.HOW_WORKS.TITLE}</TitleStyled>
-      <GridContainerStyled>
-        {gridItems.map(item => (
-          <ContainerStyled key={item.id}>
-            <Image src={item.src} alt={item.alt} width={0} height={0}/>
-            {item.overlay?.description && <Overlay tagTitle={item.overlay.tagTitle} description={item.overlay.description}/>}
-          </ContainerStyled>
-        ))}
-      </GridContainerStyled>
-
-    </HowWorksContainerStyled>
+    <GradientWrapper>
+      <HowWorksContainerStyled>
+        <TitleStyled>{TEXTS.HOW_WORKS.TITLE}</TitleStyled>
+          <GridContainerStyled>
+            {gridItems.map(item => (
+              <ContainerStyled key={item.id}>
+                <Image src={item.src} alt={item.alt} width={0} height={0}/>
+                {item.overlay?.description && <Overlay tagTitle={item.overlay.tagTitle} description={item.overlay.description}/>}
+              </ContainerStyled>
+            ))}
+          </GridContainerStyled>
+      </HowWorksContainerStyled>
+    </GradientWrapper>
   );
 };
 

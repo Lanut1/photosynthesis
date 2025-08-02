@@ -1,10 +1,10 @@
 :root {
-  --background: #ffffff;
   --foreground: #171717;
   --neon-green: #12FF51;
   --soft-green: #E3F3D1;
   --forest-green: #08A454;
   --black: #2C2C2C;
+  --night: #363D42;
   --white: #FFFFFF;
   --gray: #DADADA;
 }
@@ -16,7 +16,7 @@ body {
 
 body {
   color: var(--black);
-  background: var(--background);
+  background: var(--white);
   font-family: var(--font-suisse);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

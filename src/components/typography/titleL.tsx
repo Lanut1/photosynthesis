@@ -8,7 +8,7 @@ const TitleStyled = styled.h1`
   line-height: 80%;
   text-align: center;
   
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     font-size: 2.813rem;
     letter-spacing: -0.9px;
     word-break: break-word;

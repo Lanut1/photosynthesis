@@ -13,6 +13,11 @@ const ParagraphStyled = styled.p`
     font-size: 0.875rem;
     letter-spacing: -0.42px;
   }
+
+  @media (min-width: 370px) and (max-width: 768px),
+        (min-width: 1280px) {
+    white-space: pre-wrap;
+  }
 `;
 
 const ParagraphS = ({ children, className }: DefaultTypographyProps) => {
