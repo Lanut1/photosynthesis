@@ -96,10 +96,10 @@ const LabSection = () => {
       </TextContainerStyled>
       <ImageContainerStyled>
         <LabProcessStyled>
-          <Image height={0} width={0} alt="Lab image" src="/images/lab-process.svg"/>
+          <Image height={350} width={420} alt="Lab image" src="/images/lab-process.jpg" loading="lazy"/>
         </LabProcessStyled>
         <LabCanvasStyled>
-          <Image height={0} width={0} alt="Lab image" src="/images/lab-canvas.svg"/>
+          <Image height={600} width={450} alt="Lab image" src="/images/lab-canvas.jpg" loading="lazy"/>
         </LabCanvasStyled>
       </ImageContainerStyled>
     </LabSectionStyled>

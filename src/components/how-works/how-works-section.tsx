@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import TitleM from "../typography/titleM";
 import { TEXTS } from "@/constants/texts";
-import Image from "next/image";
 import Overlay from "./sub/overlay";
 import gridItems from "./sub/grid-items.config";
 import GradientWrapper from "@/lib/animations/gradient-wrapper";
+import Image from "next/image";
 
 const HowWorksContainerStyled = styled.div`
   display: flex;
@@ -76,7 +76,7 @@ const HowWorksSection = () => {
           <GridContainerStyled>
             {gridItems.map(item => (
               <ContainerStyled key={item.id}>
-                <Image src={item.src} alt={item.alt} width={0} height={0}/>
+                <Image height={300} width={200} alt={item.alt} src={item.image} loading="lazy" decoding="async" />
                 {item.overlay?.description && <Overlay tagTitle={item.overlay.tagTitle} description={item.overlay.description}/>}
               </ContainerStyled>
             ))}

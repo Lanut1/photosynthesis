@@ -37,7 +37,7 @@ const AuthorStatement = () => {
   return (
     <ContainerStyled>
       <AvatarStyled
-        src="/images/author.svg"
+        src="/images/author.png"
         alt="Photo of the author"
         width={116}
         height={116}

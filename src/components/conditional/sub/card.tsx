@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 
 interface ConditionCardProps {
-  icon: string;
+  icon:  React.ReactNode;
   title: string;
   description: string;
 }
@@ -44,7 +44,7 @@ const IconWrapper = styled.div`
   width: 6.125rem;
   height: 6.125rem;
 
-  img {
+  svg {
     width: 100%;
     height: 100%;
   }
@@ -62,7 +62,7 @@ const DescriptionStyled = styled(ParagraphXS)`
 const ConditionCard = ({ icon, title, description }: ConditionCardProps) => (
   <CardStyled>
     <IconWrapper>
-      <Image height={98} width={98} src={icon} alt={title}/>
+      {icon}
     </IconWrapper>
     <TitleStyled>{title}</TitleStyled>
     <DescriptionStyled>{description}</DescriptionStyled>

@@ -3,12 +3,12 @@ import { TEXTS } from "@/constants/texts";
 const gridItems = [
   {
     id: 1,
-    src: "/images/plant.svg",
+    image: "/images/plant.jpg",
     alt: "Plant diagram showing photosynthesis",
   },
   {
     id: 2,
-    src: "/images/light-leave.svg",
+    image: "/images/light-leave.jpg",
     alt: "Light reaction process in plant leaves",
     overlay: {
       tagTitle: TEXTS.HOW_WORKS.LIGHT_REACTION,
@@ -17,17 +17,17 @@ const gridItems = [
   },
   {
     id: 3,
-    src: "/images/leaves.svg",
+    image: "/images/leaves.jpg",
     alt: "Close-up of plant leaves structure",
   },
   {
     id: 4,
-    src: "/images/night-leaves.svg",
+    image: "/images/night-leaves.jpg",
     alt: "Plant respiration process at night",
   },
   {
     id: 5,
-    src: "/images/night-process.svg",
+    image: "/images/night-process.jpg",
     alt: "Biochemical night process in plants",
     overlay: {
       tagTitle: TEXTS.HOW_WORKS.NIGHT_REACTION,
@@ -36,7 +36,7 @@ const gridItems = [
   },
   {
     id: 6,
-    src: "/images/night-reaction.svg",
+    image: "/images/night-reaction.jpg",
     alt: "Chemical reactions during plant night cycle",
   }
 ];

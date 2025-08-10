@@ -3,6 +3,7 @@ import TitleM from "../typography/titleM";
 import { TEXTS } from "@/constants/texts";
 import ConditionCard from "./sub/card";
 import TitleL from "../typography/titleL";
+import { CARDS } from "@/components/conditional/sub/condition-cards.config";
 
 const ConditionalSectionStyled = styled.div`
   display: flex;
@@ -59,7 +60,7 @@ const ConditionalSection = () => {
         {TEXTS.CONDITION.TITLE_2}
       </TitleMStyled>
       <CardsContainer>
-      {TEXTS.CONDITION.CARDS.map(card => (
+      {CARDS.map(card => (
         <ConditionCard
           key={card.NAME}
           icon={card.ICON}

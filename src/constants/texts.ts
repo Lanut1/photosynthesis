@@ -26,28 +26,6 @@ export const TEXTS = {
   CONDITION: {
     TITLE_1: 'It’s Not Infinite.',
     TITLE_2: 'It’s Conditional.',
-    CARDS: [
-      {
-        NAME: 'Light',
-        DESCRIPTION: 'Provides energy.\nToo little — photosynthesis slows down.\nToo much — can damage the plant.',
-        ICON: '/images/light.svg'
-      },
-      {
-        NAME: 'Carbon Dioxide (CO₂)',
-        DESCRIPTION: 'A key ingredient for making sugars.\nMore CO₂ (up to a point) = faster\nphotosynthesis.',
-        ICON: '/images/carbon.svg'
-      },
-      {
-        NAME: 'Temperature',
-        DESCRIPTION: 'Too cold — reactions slow.\nToo hot — enzymes stop working.\nBest range: around 25°C.',
-        ICON: '/images/temperature.svg'
-      },
-      {
-        NAME: 'Minerals',
-        DESCRIPTION: 'Needed to build chlorophyll\nand enzymes. Most important:\nmagnesium, nitrogen, phosphorus.',
-        ICON: 'images/minerals.svg'
-      }
-    ],
     SEE: 'you don’ t see it',
     EVERYWHERE: 'but it’s everywhere'
     

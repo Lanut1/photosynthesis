@@ -49,7 +49,7 @@ const IntroSection = () => {
             <ImageBlock image="/images/intro-photosynthesis.png" text={TEXTS.INTRO.DEFINITION} priority />
         </ScrollAnimationWrapperStyled>
         <ScrollAnimationWrapperStyled delay={0.3}>
-           <ImageBlock image="/images/intro-vintage.png" text={TEXTS.INTRO.ENERGY}/>
+           <ImageBlock image="/images/intro-vintage.png" text={TEXTS.INTRO.ENERGY} priority/>
         </ScrollAnimationWrapperStyled>
       </ImagesContainerStyled>
     </ContainerStyled>
